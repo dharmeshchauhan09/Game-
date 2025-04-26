@@ -5,55 +5,45 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   height: 100vh;
+  overflow: hidden;
 }
 
 .ui {
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #fff;
-  text-shadow: 2px 2px 5px #000;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 button {
-  padding: 12px 24px;
-  margin: 5px;
+  padding: 10px 20px;
+  margin: 10px;
   font-size: 18px;
-  background-color: #222;
-  color: #fff;
+  background: #222;
+  color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #444;
-}
-
-button:disabled {
-  background-color: #666;
-  cursor: not-allowed;
+  background: #444;
 }
 
 #scoreDisplay {
-  margin-top: 10px;
-  color: #fff;
-  font-size: 20px;
+  color: white;
   font-weight: bold;
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 canvas {
-  border: 5px solid #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   background: radial-gradient(#e0f7fa, #b2ebf2);
-  margin-bottom: 20px;
+  border: 5px solid white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
