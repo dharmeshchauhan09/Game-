@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flying Bird 3D</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flying Bird 3D - Modern</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <h1>🕊️ Flying Bird 3D</h1>
+      <div class="score-container">
+        <span id="scoreDisplay">Score: 0</span>
+      </div>
+    </header>
 
-<div class="ui">
-  <h1>🕊️ Flying Bird 3D Game</h1>
-  <button id="startBtn">Start Game</button>
-  <div id="scoreDisplay">Score: 0</div>
-</div>
+    <main class="game-area">
+      <canvas id="gameCanvas" aria-label="Game canvas"></canvas>
+      <div class="controls">
+        <button id="startBtn" aria-label="Start Game">Start Game</button>
+        <button id="restartBtn" aria-label="Restart Game" style="display:none;">Restart</button>
+      </div>
+    </main>
 
-<canvas id="gameCanvas"></canvas>
+    <footer class="footer">
+      <p>Use Space, Up Arrow, or Tap/Click to fly</p>
+    </footer>
+  </div>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
